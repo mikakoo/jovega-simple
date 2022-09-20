@@ -1,0 +1,365 @@
+/*	JoVega.css	*/
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #c4d5dd;
+	font: normal 0.8em Verdana, Arial, Helvetica, sans-serif;
+	color: #000;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+p {
+	color: #000;
+	margin: 0;
+}
+
+
+ul, ol, blockquote{
+	margin: 6px 0px 6px 0px;
+	/* setting a margin on the left produced varying results in IE7/Firefox3
+	   but by setting the padding this seems to now have consistent indentation. */
+	padding-left: 30px;
+}
+
+ul{
+	list-style-type: disc;
+}
+
+li {
+	margin-top: 6px;
+}
+
+
+h1{
+	font-size: 1.8em;
+	font-weight: normal;
+	color: #4d6f80;
+	margin: 0 0 12px 0;
+}
+
+h2{
+	font-size: 1.5em;
+	font-weight: normal;
+	color: #7a91b3;
+	margin: 18px 0 6px 0;
+}
+
+h3{
+	font-size: 1em;
+	margin: 18px 0 6px 0;
+	color: #7a91b3;
+/*	border-bottom: 1px solid #7a91b3; */
+	padding-top: 12px;
+	background: url(../images/menu_seperator.png) top no-repeat;
+}
+
+h4{
+	font-size: 1em;
+	margin: 0px;
+}
+
+pre{
+	margin: 0px;
+}
+
+a{
+	color: #ff9900;
+	text-decoration: none;
+}
+
+a:hover{
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a img {
+	border: none;
+	background: none;
+}
+
+select {
+	line-height: 1.5;
+	padding: 8px;
+	border-color: #bdbdbd;
+}
+
+.payment-select {
+	margin: 10px 40px;
+}
+
+option {
+	line-height: 1.5;
+}
+
+
+
+/* Document Wrapper */
+#wrapper {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	width: 800px;
+	margin: 0 auto;
+	background: #fff;
+}
+
+/* Header */
+#header {
+	height: 168px;
+	margin: 0 auto;
+	background: url(../images/watersplashbanner168.jpg) #fff;
+}
+
+/* Credit Bar */
+#creditbar {
+	margin: 0 auto;
+	height: 16px;
+	background: #fff;
+}
+
+#creditbar p {
+	text-align: right;
+	padding: 0px 6px;
+	font-size: 0.6em;
+	color: #999;
+}
+
+
+/* Content */
+#content {
+	background: #fff;
+	margin: 0 auto;
+}
+
+
+/* Menu */
+#navcontainer {
+	background: #fff;
+	float: left;
+	width: 205px;
+	padding: 8px 0 24px 35px;
+	font-size: 1em;
+}
+
+#navlist {
+	padding-left: 0;
+	margin-left: 0;
+	background: url(../images/menu_seperator.png) bottom no-repeat;
+	width: 200px;
+}
+
+#navlist li {
+	list-style: none;
+	margin: 0;
+	padding: 6px;
+	background: url(../images/menu_seperator.png) top no-repeat;
+}
+
+#navlist li a { 
+	text-decoration: none;
+}
+
+
+/* rolling Testimonials */
+#rolling_testimonials {
+	/*float: left;*/
+	margin-top: 30px;
+	height: 230px;
+}
+
+
+/* Main */
+#maincontent {
+	display: block;
+	background: #fff;
+	margin: 0;
+	padding: 0 24px 24px 260px;
+}
+
+
+#maincontent p {
+	margin: 12px;
+	line-height: 1.5;
+}
+
+
+/* Footer */
+#footer {
+	clear: both;
+	width: 100%;
+	height: 24px;
+	padding-top: 6px;
+	margin: 0 auto;
+	border-top: 2px solid #4d6f80;
+	background-color: #7a91b3;
+}
+
+#footer p {
+	text-align: center;
+	color: #fff;
+}
+
+#footer img {
+	border: none;
+}
+
+#footer_logo {
+	position: absolute;
+	right: 0px;
+	width: 100px;
+	text-align: center;
+	padding-top: 0px;
+	z-index: 1;
+}
+
+#footer_sitemap {
+	position: absolute;
+	left: 0px;
+	width: 100px;
+	text-align: center;
+	z-index: 1;
+}
+
+#footer_sitemap a {
+	font-weight: normal;
+	color: #FFF;
+}
+
+#footer_sitemap a:hover {
+	font-weight: normal;
+	color: #FFF;
+	text-decoration: underline;
+}
+
+
+
+#map_canvas {
+	width: 500px;
+	height: 300px;
+	border: 1px solid #bbb;
+}
+
+
+.text_offscreen {
+	position: absolute;
+	left: -999em;	
+}
+
+
+.forprint {
+	display: none;
+}
+
+.forscreen {
+
+}
+
+
+
+.testimonial_quote {
+	padding-top: 12px;
+	margin-top: 20px;
+}
+
+.testimonial_author {
+	text-align: right;
+	font-style: italic;
+	color: #999;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	margin-bottom: 12px;
+	border-bottom: 1px dashed #999;
+}
+
+
+.link_group {
+	background: url(../images/menu_seperator.png) top no-repeat;	
+	padding: 6px 0;
+}
+
+.link_item {
+	border: 1px solid #ddd;
+	background-color: #f2f2ff;
+	margin: 12px 6px;
+	padding: 6px;
+}
+
+.link_item img {
+	float: right;
+}
+
+
+.book_item {
+	border: 1px solid #ddd;
+	background-color: #f2f2ff;
+	margin: 12px 6px;
+	padding: 8px;
+}
+
+.book_item img {
+	float: right;
+}
+
+
+.telephone_no {
+	color: #7a91b3;
+	font-weight: bold;
+	line-height: 24px;
+}
+
+
+.centred {
+	width: 100%;
+	text-align: center;
+}
+
+
+ul.question_list li {
+	display: none;
+	margin: 6px 0;	
+}
+
+
+ul.question_list li a {
+	font-weight: normal;
+	color: #069;
+}
+
+
+ul.question_list li a:hover {
+	font-weight: normal;
+	color:#09F;
+}
+
+.testimonial-card {
+    background-color: #C4D5DD;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 1px 2px 4px rgba(0,0,0,0.2);
+}
+
+.testimonial-card:nth-of-type(2) {
+    background-color: #CCDDC4;	
+}
+
+.testimonial-card:nth-of-type(3) {
+    background-color: #DDD9C4;	
+}
+
+
+.testimonial-card .author {
+	font-weight: bold;
+	color: rgba(0,0,0,0.5);
+}
+
