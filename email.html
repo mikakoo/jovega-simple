@@ -62,53 +62,34 @@
 
 <h1>Enquiries</h1>
 
-
-			<form name="contact" method="post" id="contact-form" data-netlify="true" data-netlify-recaptcha="true">
-
+			<form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
 					<p></p>
 
 <table width="400" cellspacing="8" cellpadding="4" border="0">
 
-<tr><td width="100" align="right" valign="top"><b>Name:</b></td><td><input type="text" name="from" size="35" maxlength="60" autocomplete="on" /></td></tr>
+<tr><td width="100" align="right" valign="top"><b>Name:</b></td><td>
+	<input type="text" name="name" size="35" maxlength="60" autocomplete="on" />
+	</td></tr>
 
-<tr><td align="right" valign="top"><b>Email:</b></td><td><input type="text" name="email" size="35" maxlength="60" autocomplete="on" /></td></tr>
+<tr><td align="right" valign="top"><b>Email:</b></td><td>
+	<input type="email" name="email" size="35" maxlength="60" autocomplete="on" />
+	</td></tr>
 
-<tr><td align="right" valign="top"><b>Enquiry:</b></td><td><textarea name="enquiry" rows="6" cols="30"></textarea></td></tr>
+<tr><td align="right" valign="top"><b>Enquiry:</b></td><td>
+	<textarea name="message" rows="6" cols="30"></textarea>
+	</td></tr>
+	
+	<tr><td></td><td><div data-netlify-recaptcha="true"></div></td></tr>
 
-<tr><td align="right" valign="top"><b>Phone:</b></td><td><input type="text" name="phone" size="35" maxlength="60" /></td></tr>
-
-<tr><td align="right" valign="top"><b>Call me:</b></td><td><input type="checkbox" name="callme" value="callme" /></td></tr>
-
-<tr><td align="right" valign="top"></td><td><input type="submit" name="submit" value="Send enquiry" /></td></tr>
+<tr><td align="right" valign="top"></td><td>
+	<input type="submit" name="submit" value="Send enquiry" />
+	</td></tr>
 
 </table>
 
 
 			</form>
 
-	    
-	    
-	    
-	    <form name="contact-test" method="POST" data-netlify="true">
-  <p>
-    <label>Your Name: <input type="text" name="name" /></label>
-  </p>
-  <p>
-    <label>Your Email: <input type="email" name="email" /></label>
-  </p>
-  <p>
-    <label>Your Role: <select name="role[]" multiple>
-      <option value="leader">Leader</option>
-      <option value="follower">Follower</option>
-    </select></label>
-  </p>
-  <p>
-    <label>Message: <textarea name="message"></textarea></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
-</form>
 </div>
     <!-- end of maincontent -->
 
