@@ -108,21 +108,27 @@ Alternatively please <a href="email">email</a> me.<br/><img src="images/email.gi
 
 	<h2>Payment</h2>
 
+
   <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
     <input type="hidden" name="cmd" value="_s-xclick">
     <input type="hidden" name="hosted_button_id" value="HG86GF5W7HMMQ">
+    
+          <input required type="checkbox" name="agreement" value="I agree to the Terms">By making this payment I agree to the Terms:<br><strong>Cancellations or missed appointments will be charged at the full fee unless 48 hours notice is given.</strong></input>
+          <br>
+    
+    
     <table>
     <tr><td><input type="hidden" name="on0" value="Select cost of treatment">Select cost of treatment</td></tr><tr><td><select name="os0">
-      <option value="30">£30.00 GBP</option>
-      <option value="£35">£35.00 GBP</option>
-      <option value="£40">£40.00 GBP</option>
-      <option value="£50">£50.00 GBP</option>
-      <option value="£55">£55.00 GBP</option>
-      <option value="£60">£60.00 GBP</option>
-      <option value="£65">£65.00 GBP</option>
-      <option value="£70">£70.00 GBP</option>
-      <option value="£75">£75.00 GBP</option>
-      <option value="£80">£80 £80.00 GBP</option>
+      <option value="1 -">1 - £30.00 GBP</option>
+      <option value="2 -">2 - £35.00 GBP</option>
+      <option value="3 -">3 - £40.00 GBP</option>
+      <option value="4 -">4 - £50.00 GBP</option>
+      <option value="5 -">5 - £55.00 GBP</option>
+      <option value="6 -">6 - £60.00 GBP</option>
+      <option value="7 -">7 - £65.00 GBP</option>
+      <option value="8 -">8 - £70.00 GBP</option>
+      <option value="9 -">9 - £75.00 GBP</option>
+      <option value="10 -">10 - £80.00 GBP</option>
     </select> </td></tr>
     </table>
     <input type="hidden" name="currency_code" value="GBP">
