@@ -330,7 +330,9 @@ option {
 
 .testimonial_quote {
 	padding-top: 12px;
-	margin-top: 20px;
+	margin-top: 12px;
+
+	border: 1px dashed #999;
 }
 
 .testimonial_author {
@@ -340,7 +342,6 @@ option {
 	padding-top: 6px;
 	padding-bottom: 6px;
 	margin-bottom: 12px;
-	border-bottom: 1px dashed #999;
 }
 
 
