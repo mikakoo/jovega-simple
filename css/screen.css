@@ -326,7 +326,9 @@ option {
 
 }
 
-
+.note { 
+	font-size: 0.7em;
+}
 
 .testimonial_quote {
 	padding-top: 12px;
