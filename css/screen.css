@@ -327,7 +327,8 @@ option {
 }
 
 .note { 
-	font-size: 0.7em;
+	font-size: 0.85em;
+	color: #ff9900;
 }
 
 .testimonial_quote {
