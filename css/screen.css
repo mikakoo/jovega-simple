@@ -157,12 +157,13 @@ option {
 	text-decoration: none;
 }
 
-.nav-menu li.active a {
-	transform: scale(1.2);
+
+select {
+	max-width: 100%;
 }
 
-
 #maincontent {
+	max-width: 100%;
 	padding: 20px;
 }
 
@@ -265,18 +266,8 @@ option {
 }
 
 #footer_sitemap a:hover {
-	font-weight: normal;
-	color: #FFF;
 	text-decoration: underline;
 }
-
-
-#map_canvas {
-	width: 500px;
-	height: 300px;
-	border: 1px solid #bbb;
-}
-
 
 .text_offscreen {
 	position: absolute;
