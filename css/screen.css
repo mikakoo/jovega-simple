@@ -1,7 +1,6 @@
 /*	JoVega.css	*/
 
 
-
 * {
 	margin: 0;
 	padding: 0;
@@ -27,8 +26,6 @@ p {
 
 ul, ol, blockquote{
 	margin: 6px 0px 6px 0px;
-	/* setting a margin on the left produced varying results in IE7/Firefox3
-	   but by setting the padding this seems to now have consistent indentation. */
 	padding-left: 30px;
 }
 
@@ -59,7 +56,6 @@ h3{
 	font-size: 1em;
 	margin: 18px 0 6px 0;
 	color: #7a91b3;
-/*	border-bottom: 1px solid #7a91b3; */
 	padding-top: 12px;
 	background: url(../images/menu_seperator.png) top no-repeat;
 }
@@ -80,7 +76,7 @@ a{
 
 a:hover{
 	font-weight: bold;
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 a img {
@@ -104,76 +100,76 @@ option {
 
 
 
-/* Document Wrapper */
 #wrapper {
 	position: relative;
 	margin: 0;
 	padding: 0;
 	width: 800px;
+	max-width: 100%;
 	margin: 0 auto;
 	background: #fff;
 }
 
-/* Header */
 #header {
-	height: 168px;
+	position: relative;
+	height: auto;
 	margin: 0 auto;
-	background: url(../images/watersplashbanner168.jpg) #fff;
 }
 
-/* Credit Bar */
 #creditbar {
+	display: none;
+
 	margin: 0 auto;
 	height: 16px;
 	background: #fff;
 }
 
-#creditbar p {
-	text-align: right;
-	padding: 0px 6px;
-	font-size: 0.6em;
-	color: #999;
-}
 
-
-/* Content */
 #content {
+	display: flex;
 	background: #fff;
 	margin: 0 auto;
 }
 
 
-/* Menu */
 #navcontainer {
 	background: #fff;
-	float: left;
 	width: 205px;
 	padding: 8px 0 24px 35px;
 	font-size: 1em;
 }
 
-#navlist {
+.nav-menu {
 	padding-left: 0;
 	margin-left: 0;
 	background: url(../images/menu_seperator.png) bottom no-repeat;
 	width: 200px;
 }
 
-#navlist li {
+.nav-menu li {
 	list-style: none;
 	margin: 0;
 	padding: 6px;
 	background: url(../images/menu_seperator.png) top no-repeat;
 }
 
-#navlist li a { 
+.nav-menu li a { 
 	text-decoration: none;
 }
 
+.nav-menu li.active a {
+	transform: scale(1.2);
+}
 
-/* rolling Testimonials */
 
-/* https://www.devtwins.com/blog/css-cross-fading-images */
+#maincontent {
+	padding: 20px;
+}
+
+#maincontent p {
+	margin: 12px;
+	line-height: 1.5;
+}
 
 @-webkit-keyframes testimonial-fade {
     0% {opacity: 1;}
@@ -195,7 +191,6 @@ option {
 	margin-top: 30px;
 	height: 230px;
 }
-
 
 .testimonials img {
     position: absolute;
@@ -240,26 +235,10 @@ option {
 
 
 
-/* Main */
-#maincontent {
-	display: block;
-	background: #fff;
-	margin: 0;
-	padding: 0 24px 24px 260px;
-}
-
-
-#maincontent p {
-	margin: 12px;
-	line-height: 1.5;
-}
-
-
-/* Footer */
 #footer {
 	clear: both;
 	width: 100%;
-	height: 24px;
+	height: 32px;
 	padding-top: 6px;
 	margin: 0 auto;
 	border-top: 2px solid #4d6f80;
@@ -271,18 +250,6 @@ option {
 	color: #fff;
 }
 
-#footer img {
-	border: none;
-}
-
-#footer_logo {
-	position: absolute;
-	right: 0px;
-	width: 100px;
-	text-align: center;
-	padding-top: 0px;
-	z-index: 1;
-}
 
 #footer_sitemap {
 	position: absolute;
@@ -304,7 +271,6 @@ option {
 }
 
 
-
 #map_canvas {
 	width: 500px;
 	height: 300px;
@@ -315,15 +281,6 @@ option {
 .text_offscreen {
 	position: absolute;
 	left: -999em;	
-}
-
-
-.forprint {
-	display: none;
-}
-
-.forscreen {
-
 }
 
 .note { 
@@ -390,22 +347,22 @@ option {
 }
 
 
+
 ul.question_list li {
 	display: none;
 	margin: 6px 0;	
 }
-
 
 ul.question_list li a {
 	font-weight: normal;
 	color: #069;
 }
 
-
 ul.question_list li a:hover {
 	font-weight: normal;
 	color:#09F;
 }
+
 
 .testimonial-card {
     background-color: #C4D5DD;
@@ -422,9 +379,45 @@ ul.question_list li a:hover {
     background-color: #DDD9C4;	
 }
 
-
 .testimonial-card .author {
 	font-weight: bold;
 	color: rgba(0,0,0,0.5);
 }
 
+#mobilenavbutton {
+	display: none;
+}
+
+
+/* mobile variations */
+@media (max-width: 640px) {
+
+	#navcontainer {
+		display: none;
+	}
+
+	#mobilenavbutton {
+		display: block;
+		background-color: #4d6f80;
+		color: white;
+		width: 3em;
+		height: 3em;
+		border-radius: 5px;
+		border: 2px solid white;
+		position: absolute;
+		right: 16px;
+		top: 16px;
+	}
+
+	dialog.modalnav {
+		width: 80%;
+		height: 90dvh;
+		margin: 0.5em auto;
+	}
+
+	dialog::backdrop {
+		backdrop-filter: blur(3px);
+		background-color: #7a91b385;
+	}
+
+}
