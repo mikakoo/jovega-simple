@@ -400,8 +400,8 @@ ul.question_list li a:hover {
 		display: block;
 		background-color: #4d6f80;
 		color: white;
-		width: 3em;
-		height: 3em;
+		width: 2.5em;
+		height: 2.5em;
 		border-radius: 5px;
 		border: 2px solid white;
 		position: absolute;
@@ -413,11 +413,18 @@ ul.question_list li a:hover {
 		width: 80%;
 		height: 90dvh;
 		margin: 0.5em auto;
+		border: 2px solid #4d6f80;
+		padding: 2em;
 	}
 
 	dialog::backdrop {
 		backdrop-filter: blur(3px);
 		background-color: #7a91b385;
+	}
+
+	.modal-close {
+		margin-top: 2em;
+		padding: 0.5em 1em;
 	}
 
 }
